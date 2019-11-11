@@ -10,14 +10,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Plant.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding>
+                <marker date="1573456397859" expanded="false" signature="6:131" ph="..." />
+                <marker date="1573456397859" expanded="true" signature="173:576" ph="{...}" />
+                <marker date="1573456397859" expanded="true" signature="388:574" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/PanelShowHide.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+              <folding>
+                <marker date="1573458772931" expanded="true" signature="6:131" ph="..." />
+                <marker date="1573458772931" expanded="true" signature="175:4091" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="740:782" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="808:918" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="1059:3676" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="1490:1859" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="1661:1849" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="1872:3524" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="2127:2674" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="3072:3299" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="3538:3594" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="3713:3866" ph="{...}" />
+                <marker date="1573458772931" expanded="true" signature="3896:4086" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/AntaresData.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
-                <marker date="1572333712508" expanded="false" signature="6:78" ph="..." />
-                <marker date="1572333712508" expanded="true" signature="120:379" ph="{...}" />
-                <marker date="1572333712508" expanded="true" signature="263:377" ph="{...}" />
+                <marker date="1571728725752" expanded="false" signature="6:32" ph="..." />
+                <marker date="1571728725752" expanded="true" signature="74:123" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,14 +79,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/PanelShowHide.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/AntaresData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Plant.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Hidroponik.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Script/Plant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PanelShowHide.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="320" />
-    <option name="y" value="130" />
-    <option name="width" value="1920" />
-    <option name="height" value="780" />
+    <option name="x" value="1387" />
+    <option name="width" value="1180" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -108,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573446849021</updated>
-      <workItem from="1573446852688" duration="621000" />
+      <workItem from="1573446852688" duration="4673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="621000" />
+    <option name="totallyTimeSpent" value="4673000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -125,13 +171,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="320" y="130" width="1920" height="780" extended-state="0" />
+    <frame x="1387" y="0" width="1180" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2669643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -185,13 +231,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Plant.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Script/AntaresData.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1572333712508" expanded="false" signature="6:78" ph="..." />
-            <marker date="1572333712508" expanded="true" signature="120:379" ph="{...}" />
-            <marker date="1572333712508" expanded="true" signature="263:377" ph="{...}" />
+            <marker date="1571728725752" expanded="false" signature="6:32" ph="..." />
+            <marker date="1571728725752" expanded="true" signature="74:123" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Plant.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <marker date="1573456397859" expanded="false" signature="6:131" ph="..." />
+            <marker date="1573456397859" expanded="true" signature="173:576" ph="{...}" />
+            <marker date="1573456397859" expanded="true" signature="388:574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/PanelShowHide.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="100" column="16" lean-forward="true" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+          <folding>
+            <marker date="1573458772931" expanded="true" signature="6:131" ph="..." />
+            <marker date="1573458772931" expanded="true" signature="175:4091" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="740:782" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="808:918" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="1059:3676" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="1490:1859" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="1661:1849" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="1872:3524" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="2127:2674" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="3072:3299" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="3538:3594" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="3713:3866" ph="{...}" />
+            <marker date="1573458772931" expanded="true" signature="3896:4086" ph="{...}" />
           </folding>
         </state>
       </provider>

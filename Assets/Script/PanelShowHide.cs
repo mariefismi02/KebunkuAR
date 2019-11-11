@@ -15,15 +15,15 @@ public class PanelShowHide : MonoBehaviour
     public GameObject CommonInfo;
     public GameObject DetailInfo;
 
-    [SerializeField] private Plant plant = new Hidroponik();
+    [SerializeField] private Plant plant = new Plant();
 
     [SerializeField] private TextMeshProUGUI detail;
     [SerializeField] private Image icon;
 
-    [SerializeField] private Text umur;
+    [SerializeField] private Text data1;//ec
     [SerializeField] private Text suhu;
     [SerializeField] private Text ph;
-    [SerializeField] private Text air;
+    [SerializeField] private Text data4;//water level/humidity
     [SerializeField] private Text nama;
 
     public Plant Plant
@@ -37,6 +37,7 @@ public class PanelShowHide : MonoBehaviour
         CommonInfo.SetActive(false);
         DetailInfo.SetActive(false);
     }
+
 
     public void Show(string vuMarkId, string vuMarkDataType, string vuMarkName, string vuMarkDesc, Sprite vuMarkImage, Sprite vuMarkIcon) {
 
@@ -74,6 +75,14 @@ public class PanelShowHide : MonoBehaviour
 
                 if (_val[0] == "T" || _val[0] == "Temp")
                     plant.suhu = float.Parse(_val[1]);
+
+                if (_val[0] == "WL")
+                    plant.air = float.Parse(_val[1]);
+
+                if (_val[0][0] == 'H' && _val[0][1] - 48 == int.Parse(vuMarkId))//Jika Humidity & id = vumarkId
+                    plant.kelembaban = float.Parse(_val[1]);
+
+
             }
 
             plant.nama = vuMarkName;
@@ -81,10 +90,17 @@ public class PanelShowHide : MonoBehaviour
             plant.icon = vuMarkIcon;
 
             nama.text = "<color=yellow><b>INFORMASI</b></color>\n" + plant.nama;
-            umur.text = "<color=yellow><b>UMUR</b></color>\n" + 0 + " Hari";
             suhu.text = "<color=yellow><b>SUHU</b></color>\n" + plant.suhu + " Derajat";
             ph.text = "<color=yellow><b>PH TANAH</b></color>\n" + plant.ph;
-            air.text = "<color=yellow><b>AIR</b></color>\n" + 0 + "%";
+
+            if (vuMarkId == "0")
+            {
+                data1.text = "<color=yellow><b>ELECTROLIT CONDUCTIVITY</b></color>\n" + plant.ec + " mS";
+                data4.text = "<color=yellow><b>WATER LEVEL</b></color>\n" + plant.air + "%";
+            }
+            else
+                data4.text = "<color=yellow><b>KELEMBABAN</b></color>\n" + plant.kelembaban + "%";
+                
             detail.text = plant.deskripsi;
             icon.sprite = plant.icon;
 
