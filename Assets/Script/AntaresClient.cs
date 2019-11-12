@@ -1,39 +1,42 @@
-﻿using Proyecto26;
+﻿using System;
+using Proyecto26;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
+using RSG;
 using UnityEditor;
 using UnityEngine;
 
 public static class AntaresClient 
 {
-    public static string Get(string apiKey)
+    public static IPromise<AntaresData> Get(string apiKey, string uri)
     {
-        string result = null;
+        var promise = new Promise<AntaresData>();    // Create promise.
 
-        //Unfinished Code
-        /*RestClient.Get(new RequestHelper
+        RestClient.Get(new RequestHelper
         {
-            Uri = "https://platform.antares.id:8443/~/antares-cse/antares-id/KebunKu/PH-tanah/la/",
+            Uri = uri,
             Headers = new Dictionary<string, string>
             {
-                { "X-M2M-Origin", apiKey},
-                { "Content-Type",  "application/json;ty=4"},
-                { "Accept", "application/json"}
+                {"X-M2M-Origin", apiKey},
+                {"Content-Type", "application/json;ty=4"},
+                {"Accept", "application/json"}
             }
         }).Then(res =>
         {
 
             string txt = res.Text.Substring(17, res.Text.Length - 20);
             var data = JsonUtility.FromJson<AntaresData>(txt);
-            //Debug.Log(result);
-            result = data.con;
+            promise.Resolve(data);
         }).Catch(err =>
         {
-            Debug.Log(err.Message);
-            result = "";
-        });*/
+            string message = err.Message;
 
-        return result;
+            promise.Resolve(new AntaresData(message, message));
+        });
+
+
+        return promise;
 
     }
 }
